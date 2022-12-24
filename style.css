@@ -1,0 +1,212 @@
+@font-face {
+    font-family: Fraunces;
+    src: url(./fonts/Fraunces_9pt-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+body {
+    background-color: #B2BEB5;
+}
+
+.parfumePhoneImg {
+    display: none;
+}
+
+.parfumeDesktopImg {
+    width: 15%;
+    height: 55%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: fixed;
+    top: 21%;
+    left: 30%
+}
+
+.title {
+    font-family: 'Montserrat';
+    font-size: 11px;
+    font-weight: 500, 700;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(30, 38%, 92%);
+    width: 15%;
+    height: 51%;
+    position: fixed;
+    top: 19.5%;
+    left: 45%;
+    padding-top: 2%;
+    padding-left: 2%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.parfumeName {
+    font-family: 'Fraunces';
+    font-size: 25px;
+    font-weight: 700;
+    width: 13%;
+    height: 5%;
+    position: fixed;
+    top: 27%;
+    left: 47%;
+}
+
+.parfumeDescription {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500, 700;
+    width: 14%;
+    height: 10%;
+    position: fixed;
+    top: 43%;
+    left: 47%;
+}
+
+.Price {
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 27px;
+    color: hsl(158, 36%, 37%);
+    position: fixed;
+    top: 56.5%;
+    left: 47%;
+}
+
+.addCartButon {
+    font-family: 'Fraunces';
+    font-weight: 700;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    width: 13%;
+    height: 6%;
+    border: 0px;
+    padding-left: 2.5%;
+    position: fixed;
+    top: 66%;
+    left: 47%;
+    cursor: pointer;
+}
+
+.addCartButon:hover {
+    transition-duration: 0.4;
+    background-color: hsl(158, 90%, 12%);
+}
+
+.cartImg {
+    position: fixed;
+    top: 68%;
+    left: 50.5%;
+    z-index: 1;
+}
+
+.attribution {
+    position: fixed;
+    top: 95%;
+    left: 73%;
+}
+
+@media (max-width: 375px) {
+
+.parfumeDesktopImg{
+    display: none;
+}
+
+.parfumePhoneImg {
+    width: 85%;
+    height: 35%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    display:grid;
+}
+
+.title {
+    font-family: 'Montserrat';
+    font-size: 11px;
+    font-weight: 500, 700;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(30, 38%, 92%);
+    width: 79%;
+    height: 51%;
+    position: fixed;
+    top: 39%;
+    left: 5%;
+    padding-top: 5%;
+    padding-left: 6%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+}
+
+.parfumeName {
+    font-family: 'Fraunces';
+    font-size: 28px;
+    font-weight: 700;
+    width: 65%;
+    height: 5%;
+    position: fixed;
+    top: 43%;
+    left: 10%;
+}
+
+.parfumeDescription {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500, 700;
+    width: 75%;
+    height: 10%;
+    position: fixed;
+    top: 57%;
+    left: 10%;
+}
+
+.Price {
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+    position: fixed;
+    top: 70%;
+    left: 10%;
+}
+
+.addCartButon {
+    font-family: 'Fraunces';
+    font-weight: 700;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    width: 70%;
+    height: 7%;
+    border: 0px;
+    padding-left: 2.5%;
+    position: fixed;
+    top: 82%;
+    left: 10%;
+    cursor: none;
+}
+
+.cartImg {
+    position: fixed;
+    top: 84.3%;
+    left: 30%;
+    z-index: 12;
+}
+
+.attribution {
+    width: 100%;
+    height: 5%;
+    position: fixed;
+    top: 97%;
+    left: 1%;
+}
+
+}
