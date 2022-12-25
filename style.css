@@ -9,204 +9,237 @@
 }
 
 body {
-    background-color: #B2BEB5;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+
+    background-color: rgb(146, 146, 139);
+
+    height: 100vh;
+    width: 100vw;
+
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.card {
+    height: 300px;
+    width: 410px;
+
+    background-color: #ffff;
+
+    margin: auto;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card .parfumeDesktopImg {
+    height: 300px;
+    width: 200px;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .parfumePhoneImg {
     display: none;
 }
 
-.parfumeDesktopImg {
-    width: 15%;
-    height: 55%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    position: fixed;
-    top: 21%;
-    left: 30%
-}
-
-.title {
+.card .title {
     font-family: 'Montserrat';
-    font-size: 11px;
-    font-weight: 500, 700;
-    background-color: hsl(0, 0%, 100%);
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
     color: hsl(30, 38%, 92%);
-    width: 15%;
-    height: 51%;
-    position: fixed;
-    top: 19.5%;
-    left: 45%;
-    padding-top: 2%;
-    padding-left: 2%;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+
+    margin-top: -285px;
+    margin-left: 215px;
 }
 
-.parfumeName {
+.card .parfumeName {
+    font-family: 'Fraunces';
+    font-size: 20px;
+
+    width: 160px;
+
+    margin-top: 0px;
+    margin-left: 215px;
+}
+
+.card .parfumeDescription {
+    font-family: 'Montserrat';
+    font-size: 12px;
+
+    color: hsl(228, 12%, 48%);
+
+    position: absolute;
+    width: 188px;
+
+    margin-left: 215px;
+}
+
+.card .Price {
     font-family: 'Fraunces';
     font-size: 25px;
-    font-weight: 700;
-    width: 13%;
-    height: 5%;
-    position: fixed;
-    top: 27%;
-    left: 47%;
-}
 
-.parfumeDescription {
-    font-family: 'Montserrat';
-    font-size: 14px;
-    color: hsl(228, 12%, 48%);
-    font-weight: 500, 700;
-    width: 14%;
-    height: 10%;
-    position: fixed;
-    top: 43%;
-    left: 47%;
-}
-
-.Price {
-    font-family: 'Fraunces';
-    font-weight: 700;
-    font-size: 27px;
     color: hsl(158, 36%, 37%);
-    position: fixed;
-    top: 56.5%;
-    left: 47%;
+
+    position: absolute;
+    margin-left: 220px;
+    margin-top: 85px;
 }
 
-.addCartButon {
+.card .priceHasped {
     font-family: 'Fraunces';
-    font-weight: 700;
-    background-color: hsl(158, 36%, 37%);
+    font-size: 15px;
+    text-decoration: line-through;
+
+    color: hsl(228, 12%, 48%);
+
+    position: absolute;
+    margin-left: 325px;
+    margin-top: 92px;
+}
+
+.card .addCartButon {
+    font-family: 'Montserrat';
+
     color: hsl(0, 0%, 100%);
-    border-radius: 8px;
-    width: 13%;
-    height: 6%;
-    border: 0px;
-    padding-left: 2.5%;
-    position: fixed;
-    top: 66%;
-    left: 47%;
+    background-color: hsl(158, 36%, 37%);
+    border-color: transparent;
+
+    height: 35px;
+    width: 160px;
+
+    margin-top: 125px;
+    margin-left: 230px;
+
+    border-radius: 7px;
+
     cursor: pointer;
 }
 
-.addCartButon:hover {
+.card .addCartButon:hover {
+    background-color: hsl(157, 42%, 14%);
+
     transition-duration: 0.4;
-    background-color: hsl(158, 90%, 12%);
 }
 
 .cartImg {
-    position: fixed;
-    top: 68%;
-    left: 50.5%;
-    z-index: 1;
-}
+    position: absolute;
+    margin-left: 53px;
+    margin-top: 262px;
 
-.attribution {
-    position: fixed;
-    top: 95%;
-    left: 73%;
 }
 
 @media (max-width: 375px) {
 
-.parfumeDesktopImg{
+.parfumeDesktopImg {
     display: none;
 }
 
-.parfumePhoneImg {
-    width: 85%;
-    height: 35%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 0px;
-    position: fixed;
-    top: 5%;
-    left: 5%;
-    display:grid;
+.card {
+    height: 500px;
+    width: 320px;
+
+    background-color: #ffff;
+
+    margin: auto;
+
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.title {
+.card .parfumePhoneImg {
+    display: flex;
+    width: 320px;
+    height: 200px;
+}
+
+.card .title {
     font-family: 'Montserrat';
-    font-size: 11px;
-    font-weight: 500, 700;
-    background-color: hsl(0, 0%, 100%);
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
     color: hsl(30, 38%, 92%);
-    width: 79%;
-    height: 51%;
-    position: fixed;
-    top: 39%;
-    left: 5%;
-    padding-top: 5%;
-    padding-left: 6%;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 10px;
+
+    margin-top: 15px;
+    margin-left: 30px;
 }
 
-.parfumeName {
+.card .parfumeName {
     font-family: 'Fraunces';
-    font-size: 28px;
-    font-weight: 700;
-    width: 65%;
-    height: 5%;
-    position: fixed;
-    top: 43%;
-    left: 10%;
+    font-size: 20px;
+
+    width: 200px;
+
+    margin-left: 30px;
 }
 
-.parfumeDescription {
+.card .parfumeDescription {
     font-family: 'Montserrat';
-    font-size: 14px;
+    font-size: 15px;
+
     color: hsl(228, 12%, 48%);
+
+    position: absolute;
+    width: 280px;
+
+    margin-left: 30px;
+}
+
+.card .Price {
+    font-family: 'Fraunces';
     font-weight: 500, 700;
-    width: 75%;
-    height: 10%;
-    position: fixed;
-    top: 57%;
-    left: 10%;
-}
-
-.Price {
-    font-family: 'Fraunces';
-    font-weight: 700;
     font-size: 30px;
+
     color: hsl(158, 36%, 37%);
-    position: fixed;
-    top: 70%;
-    left: 10%;
+
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 95px;
 }
 
-.addCartButon {
+.card .priceHasped {
     font-family: 'Fraunces';
-    font-weight: 700;
-    background-color: hsl(158, 36%, 37%);
+    font-weight: 500, 700;
+    font-size: 15px;
+    text-decoration: line-through;
+
+    color: hsl(228, 12%, 48%);
+
+    position: absolute;
+    margin-left: 155px;
+    margin-top: 102px;
+}
+
+.card .addCartButon {
+    font-family: 'Montserrat';
+
     color: hsl(0, 0%, 100%);
-    border-radius: 8px;
-    width: 70%;
-    height: 7%;
-    border: 0px;
-    padding-left: 2.5%;
-    position: fixed;
-    top: 82%;
-    left: 10%;
-    cursor: none;
+    background-color: hsl(158, 36%, 37%);
+    border-color: transparent;
+
+    height: 40px;
+    width: 250px;
+
+    margin-top: 145px;
+    margin-left: 40px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
 }
 
 .cartImg {
-    position: fixed;
-    top: 84.3%;
-    left: 30%;
-    z-index: 12;
-}
-
-.attribution {
-    width: 100%;
-    height: 5%;
-    position: fixed;
-    top: 97%;
-    left: 1%;
+    position: absolute;
+    margin-left: 105px;
+    margin-top: 255px;
 }
 
 }
